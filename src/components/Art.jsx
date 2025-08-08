@@ -53,9 +53,9 @@ const Art = () => {
           </ul>
           </div>
           <div>
-                    <img src='./images/drink1.png' alt='left-leaf' 
+                    <img src='./images/drink4.png' alt='left-leaf' 
         className='absolute top-30 left-4 w-40 rotate-12'/>
-        <img src='./images/drink4.png' alt='right-leaf' 
+        <img src='./images/drink1.png' alt='right-leaf' 
         className='absolute bottom-30 right-4 w-40 rotate-6'/>
 
           </div>
