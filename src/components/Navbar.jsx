@@ -1,23 +1,25 @@
 import React from 'react'
-import Link from "react-router";
-import { navLinks } from '../../constants/index.js';
+import { navLinks } from '../../constants/index'
 
 const Navbar = () => {
   return (
     <nav>
       <div>
-        <Link to="#home" className="flex items-center gap-2">
-          <img src="./images/logo.png" alt="logo" />
-            <p>Velvet Pour</p>
-        </Link>
+        <a href={"#home"} className='flex items-center gap-2'>
+          <img src='/images/logo.png' alt='logo' />
+          <p>Velvet Pour</p>
+        </a>
         <ul>
-          {navLinks.map((link)=> (
+          {navLinks.map((link)=>(
             <li key={link.id}>
-              <Link to={link.id}>{link.title}</Link>
+              <a href={link.id}>
+                {link.title}
+              </a>
             </li>
           ))}
         </ul>
       </div>
+     
     </nav>
   )
 }
