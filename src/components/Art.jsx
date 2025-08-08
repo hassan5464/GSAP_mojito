@@ -52,6 +52,13 @@ const Art = () => {
             ))}
           </ul>
           </div>
+          <div>
+                    <img src='./images/drink1.png' alt='left-leaf' 
+        className='absolute top-30 left-4 w-40 rotate-12'/>
+        <img src='./images/drink4.png' alt='right-leaf' 
+        className='absolute bottom-30 right-4 w-40 rotate-6'/>
+
+          </div>
           <div className="cocktail-img">
             <img src="./images/under-img.jpg" alt="cocktail" className="abs-center masked-img 
             object-contain size-full" />
