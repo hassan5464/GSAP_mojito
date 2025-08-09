@@ -9,14 +9,21 @@ const About = () => {
     const titleSplit = SplitText.create('#about h2', {
     type: 'words'
     })
-    
+    const paragraphSplit = new SplitText(".sub-content", {type: "lines"});
     const scrollTimeline = gsap.timeline({
     scrollTrigger: {
       trigger: '#about',
       start: 'top center'
     }
     })
-    
+    gsap.from(paragraphSplit.lines, {
+      opacity: 0,
+      ypercent: 100,
+      duration: 1.8,
+      stagger: 0.06,
+      ease: "expo.out",
+      delay: 1
+    })
     scrollTimeline
     .from(titleSplit.words, {
       opacity: 0, duration: 1, yPercent: 100, ease: 'expo.out', stagger: 0.02

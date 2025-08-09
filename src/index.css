@@ -196,7 +196,7 @@ body {
             }
 
             .sub-content {
-                @apply md:col-span-4 space-y-5 flex flex-col justify-between;
+                @apply md:col-span-4 space-y-0 flex flex-col justify-between;
 
                 p {
                     @apply text-lg;
